@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(193, 204, 193);
+    height: 100vh;
+}
+.loading
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+img
+{
+    max-width: 100%;
+}
+section .title
+{
+    font-size: 40px;
+    color:blue;
+    text-align: center;
+    margin: 40px 0;
+}
+.tour-container
+{
+    max-width: 500px;
+    margin: 20px auto;  
+    border-radius: 12px;
+    background-color: antiquewhite;  
+}
+.tour-container img
+{
+    border-radius: 12px 12px 0 0;
+}
+.tour-info
+{
+    padding: 20px;
+    text-align: center;
+}
+.tour-info div
+{
+    display: flex;
+    justify-content: space-between;
+    color: blue;
+}
+.tour-info p
+{
+    text-align: justify;
+    line-height: 1.5;
+}
+.tour-info p button
+{
+    border: none;
+    background: none;
+    color: blue;
+    cursor: pointer;
+}
+.tour-info .delete-btn
+{
+    padding: 8px 15px;
+    border: none;
+    background: #fff;
+    border-radius: 6px;
+    color: brown;
+    border: 1px solid;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.tour-info .delete-btn:hover
+{
+    opacity: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.no-tours
+{
+    text-align: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.no-tours h2
+{
+    color: brown;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.no-tours button
+{
+    border: none;
+    font-size: 20px;
+    padding: 8px 14px;
+    border-radius: 4px;
+    color: blue;
+    cursor: pointer;
 }
